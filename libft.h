@@ -4,9 +4,9 @@
 //# include <stdio.h>
 //# include <strings.h>
 //# include <string.h>
-//# include <stdlib.h>
+# include <stdlib.h>
 //# include <ctype.h>
-//# include <unistd.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
