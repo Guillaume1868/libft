@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 20:55:08 by gaubert           #+#    #+#             */
-/*   Updated: 2021/09/27 10:50:03 by marvin           ###   ########.fr       */
+/*   Updated: 2021/10/11 11:38:46 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static void	ft_grab_int(char *str, int *result)
 	}
 }
 
-int	ft_atoi(const char *str)
+int	ft_atoi(char *str)
 {
 	int		minus_count;
 	char	*str_clean;
