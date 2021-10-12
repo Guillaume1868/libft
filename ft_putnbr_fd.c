@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaubert <marvin@42lausanne.ch>             +#+  +:+       +#+        */
+/*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 14:28:46 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/11 14:52:13 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/12 08:12:11 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	char	str;
 	long	nb;
 
 	nb = n;
 	if (nb == 0)
-		ft_putchar_fd('0',fd);
+		ft_putchar_fd('0', fd);
 	if (nb < 0)
 	{
-		ft_putchar_fd('-',fd);
+		ft_putchar_fd('-', fd);
 		nb = nb * -1;
 	}
 	if (nb > 9)

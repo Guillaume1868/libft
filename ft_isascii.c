@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaubert <gaubert@student.42lausann>        +#+  +:+       +#+        */
+/*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 11:53:13 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/11 11:53:17 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/12 08:14:32 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_isascii(int c)
 {
