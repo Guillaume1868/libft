@@ -23,6 +23,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_memcpy(res, s1, ft_strlen(s1));
 	ft_memcpy(&res[ft_strlen(s1)], s2, ft_strlen(s2));
-	ft_memcpy(&res[ft_strlen(s1)+ft_strlen(s2)], "\0", 1);
+	ft_memcpy(&res[ft_strlen(s1) + ft_strlen(s2)], "\0", 1);
 	return (res);
 }
