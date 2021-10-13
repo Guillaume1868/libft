@@ -11,19 +11,22 @@ ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_striteri.c
 
 OBJ = $(SRC:.c=.o)
 
+BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
+					ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
+					ft_lstmap.c ft_lstnew.c ft_lstsize.c
+BONUS_OBJS		= $(BONUS:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@echo "ar rc $(NAME)"
-	@ranlib $(NAME)
-	@echo "ranlib $(NAME)"
+	@ar rcs $(NAME) $(OBJ)
+	@echo "ar rcs $(NAME)"
 
 %.o: %.c
 	@gcc $(FLAG) -c $< -o $@
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) $(BONUS_OBJS)
 	@echo ".o deleted"
 
 fclean: clean
@@ -32,4 +35,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJ) $(BONUS_OBJS)
+
+.PHONY: all, clean, fclean, re, bonus
