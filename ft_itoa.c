@@ -6,13 +6,13 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 12:26:53 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/12 08:03:16 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/13 11:51:07 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	len(long nb)
+static int	len(long nb)
 {
 	int		len;
 
