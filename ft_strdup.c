@@ -6,19 +6,19 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 17:44:14 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/12 08:11:47 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/14 14:07:58 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *src)
+char	*ft_strdup(const char *s1)
 {
 	char	*duped;
 	int		i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (s1[i] != '\0')
 	{
 		i++;
 	}
@@ -26,11 +26,11 @@ char	*ft_strdup(const char *src)
 	if (!duped)
 		return (NULL);
 	i = 0;
-	while (src[i] != '\0')
+	while (s1[i] != '\0')
 	{
-		duped[i] = src[i];
+		duped[i] = s1[i];
 		i++;
 	}
-	duped[i] = src[i];
+	duped[i] = s1[i];
 	return (duped);
 }
