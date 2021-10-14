@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 20:55:08 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/11 11:38:46 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/14 11:49:30 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static char	*ft_detect_minus(char *str, int *minus_count)
 		{
 			*minus_count += 1;
 			str++;
-		}	
+		}
 		else if (*str == '+')
 			str++;
 		else

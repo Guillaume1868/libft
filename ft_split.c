@@ -6,7 +6,7 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 11:10:34 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/14 10:40:15 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/14 14:03:25 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static char	*word_dup(const char *str, int start, int end)
 	return (res);
 }
 
-static void	ft_g_tro_de_lignes(int *i, int *j, int *idx)
+static void	ft_too_many_lines(int *i, int *j, int *idx)
 {
 	*i = 0;
 	*j = 0;
@@ -65,7 +65,7 @@ char	**ft_split(char const *s, char c)
 	res = malloc(sizeof(char *) * (wc(s, c) + 1));
 	if (!res)
 		return (0);
-	ft_g_tro_de_lignes(&i, &j, &idx);
+	ft_too_many_lines(&i, &j, &idx);
 	while (i <= (int) ft_strlen(s))
 	{
 		if (s[i] != c && idx < 0)

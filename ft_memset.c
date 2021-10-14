@@ -6,11 +6,13 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 08:12:43 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/12 08:13:23 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/14 13:10:33 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int c, int n)
+#include "stdlib.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*ptr;
 
