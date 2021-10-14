@@ -6,11 +6,11 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 20:55:08 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/14 11:49:30 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/14 16:24:00 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static char	*ft_remove_spaces(char *str)
+static const char	*ft_remove_spaces(char const *str)
 {
 	int	exit;
 
@@ -27,7 +27,7 @@ static char	*ft_remove_spaces(char *str)
 	return (str);
 }
 
-static char	*ft_detect_minus(char *str, int *minus_count)
+static const char	*ft_detect_minus(char const *str, int *minus_count)
 {
 	int	exit;
 
@@ -47,7 +47,7 @@ static char	*ft_detect_minus(char *str, int *minus_count)
 	return (str);
 }
 
-static void	ft_grab_int(char *str, int *result)
+static void	ft_grab_int(const char *str, int *result)
 {
 	if (*str <= '9' && *str >= '0')
 	{
@@ -58,11 +58,11 @@ static void	ft_grab_int(char *str, int *result)
 	}
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int		minus_count;
-	char	*str_clean;
-	int		result;
+	int			minus_count;
+	const char	*str_clean;
+	int			result;
 
 	result = 0;
 	minus_count = 0;
