@@ -17,7 +17,7 @@ static int	len(long nb)
 	int		len;
 
 	len = 0;
-	if (nb < 0)
+	if (nb <= 0)
 	{
 		nb = nb * -1;
 		len++;

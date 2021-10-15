@@ -29,20 +29,16 @@ static const char	*ft_remove_spaces(char const *str)
 
 static const char	*ft_detect_minus(char const *str, int *minus_count)
 {
-	int	exit;
-
-	exit = 0;
-	while (exit == 0 && *str != '\0')
+	while (*str != '\0')
 	{
 		if (*str == '-')
 		{
 			*minus_count += 1;
-			str++;
+			return (++str);
 		}
 		else if (*str == '+')
-			str++;
-		else
-			exit = 1;
+			return (++str);
+		return (str);
 	}
 	return (str);
 }
