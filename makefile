@@ -35,11 +35,11 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -f $(OBJ) $(BONUS_OBJS)
-	@echo ""$(_INFO) libft OBJ removed.\n"
+	@printf "$(_INFO) libft OBJ removed.\n"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(_INFO) LIBFT removed.\n"
+	@printf "$(_INFO) LIBFT removed.\n"
 
 re: fclean all
 
